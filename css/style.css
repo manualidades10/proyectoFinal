@@ -1,0 +1,190 @@
+/** llamado variables y mixins**/
+/**
+rgb(221, 255, 187)
+rgb(199, 233, 176)
+rgb(179, 201, 156)
+rgb(164, 188, 146)
+**/
+/** llamado reset y tipografias **/
+@import 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** font-family: 'Varela Round', sans-serif; **/
+/** llamado layout **/
+body {
+  background-color: rgb(221, 255, 187);
+  font-family: "Varela Round", sans-serif;
+}
+
+header .seccion-redes-header {
+  background-color: rgb(199, 233, 176);
+  padding: 0.3125rem 1.5625rem;
+}
+header .seccion-redes-header h3 {
+  text-align: center;
+}
+header .seccion-redes-header div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.seccion-titulo-header {
+  width: 100%;
+  padding: 1.25rem;
+  border: 0.125rem solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "search logo titulo ";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.seccion-titulo-header .buscador {
+  width: 100%;
+  grid-area: search;
+  display: flex;
+  justify-content: center;
+}
+.seccion-titulo-header .buscador input {
+  width: 31.25rem;
+  height: 3.125rem;
+  padding: 0.625rem;
+  border: 0.125rem solid black;
+  font-size: 20px;
+}
+.seccion-titulo-header .buscador button {
+  height: 3.125rem;
+  padding: 0.625rem;
+  border: 0.125rem solid black;
+}
+.seccion-titulo-header .buscador button:hover {
+  cursor: pointer;
+}
+.seccion-titulo-header .logo-header {
+  grid-area: logo;
+}
+.seccion-titulo-header h2 {
+  text-align: center;
+  grid-area: titulo;
+  font-size: 6.25rem;
+}
+
+footer {
+  background-color: rgb(199, 233, 176);
+  padding: 1.25rem;
+  border: 0.125rem solid black;
+}
+footer .logo-wpp {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+footer .logo-wpp a img:hover {
+  width: 5rem;
+}
+footer .redes-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.main-index {
+  padding-bottom: 1.25rem;
+}
+.main-index h1 {
+  text-align: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+
+.seccion-destacados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  grid-auto-rows: auto;
+  grid-template-areas: "item1 item3" "item2 item4";
+  justify-content: center;
+  align-content: center;
+  gap: 1.5625rem;
+  column-gap: 6.25rem;
+  align-items: center;
+}
+.seccion-destacados .card-index {
+  width: 15.625rem;
+  height: 34.375rem;
+  border: 0.125rem solid black;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+}
+.seccion-destacados .card-index div img {
+  width: 100%;
+  object-fit: cover;
+}
+.seccion-destacados .card-index button {
+  font-size: 1.25rem;
+  background-color: rgb(164, 188, 146);
+  width: 70%;
+  padding: 1.25rem;
+  margin-top: 1.875rem;
+  border: 0.0625rem solid black;
+  border-radius: 1.875rem;
+}
+.seccion-destacados .card-index button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.index-primera, .index-segunda {
+  grid-area: item1;
+  justify-self: flex-end;
+}
+
+.index-segunda {
+  grid-area: item2;
+}
+
+.index-tercera, .index-cuarta {
+  grid-area: item3;
+  justify-self: flex-start;
+}
+
+.index-cuarta {
+  grid-area: item4;
+}
+
+.texto-form {
+  background-color: rgb(179, 201, 156);
+}
+.texto-form p {
+  font-size: 1.875rem;
+}
+
+.formulario-contacto {
+  font-size: 2.5rem;
+  background-color: rgb(199, 233, 176);
+}
+
+/** llamdo componentes **/
+.navbar {
+  background-color: rgb(199, 233, 176);
+}
+.navbar ul {
+  font-size: 1.25rem;
+}
+.navbar ul li a:hover {
+  background-color: antiquewhite;
+  font-size: 1.5625rem;
+}
+
+/*# sourceMappingURL=style.css.map */

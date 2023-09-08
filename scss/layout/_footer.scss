@@ -1,0 +1,25 @@
+footer{
+    background-color: $color-claro-1;
+    padding: 1.25rem;
+    border: .125rem solid black;
+    .logo-wpp{
+        position: fixed;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        a{
+            img{
+                &:hover{
+                    width: 5rem;
+                }
+            }
+        }
+    }
+    .redes-footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap:1.25rem;
+    }
+
+}

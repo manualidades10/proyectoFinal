@@ -1,0 +1,23 @@
+/** llamado variables y mixins**/
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+/** llamado reset y tipografias **/
+
+@import "./base/reset";
+@import "./base/typo";
+
+/** llamado layout **/
+
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+@import "./layout/main-contacto";
+@import "./layout/main-tienda";
+
+/** llamdo componentes **/
+
+@import "./components/navbar";
