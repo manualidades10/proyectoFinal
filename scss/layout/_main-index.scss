@@ -1,58 +1,50 @@
 .main-index{
-    padding-bottom: 1.25rem;
+    padding: 1.25rem;
     h1{
         text-align: center;
-        margin-top: 1.25rem;
-        margin-bottom: 1.875rem
+        margin-bottom: 1.875rem;
     }
 }
 
 .seccion-destacados{
-    @include grid(repeat(2, 1fr), none, auto, "item1 item3" "item2 item4", center, center, 1.5625rem, 6.25rem);
-    align-items: center;
+    @include grid (repeat(3,1fr),none,auto,"index1 index2 index3", center,center,none,none);
+    justify-items: center;
     .card-index{
-        width: 15.625rem;
-        height: 34.375rem;
+        @include grid(repeat(2,1fr),none,auto,"img contenido",center,center,none,.625rem);
+        align-items: center;
+        background-color: $color-claro-3;
+        width: 33.125rem;
+        height: 22.5rem;
         border: .125rem solid black;
         border-radius: 1.25rem;
         overflow: hidden;
-        text-align: center;
-
-        div{
+        .card-img-index{
+            grid-area: img;
             img{
                 width: 100%;
-                object-fit: cover;
             }
         }
-        button{
-            font-size: 1.25rem;
-            background-color: $color-claro-3;
-            width: 70%;
-            padding: 1.25rem;
-            margin-top: 1.875rem;
-            border: .0625rem solid black;
-            border-radius: 1.875rem;
-            &:hover{
-                cursor: pointer;
-                text-decoration: underline;
+        .card-text-index{
+            grid-area: contenido;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: .3125rem;
+            button{
+                width: 12.5rem;
+                height: 3.125rem;
             }
         }
     }
 }
 
 .index-primera{
-    grid-area: item1;
-    justify-self: flex-end;
+    grid-area: index1;
 }
 .index-segunda{
-    @extend .index-primera;
-    grid-area: item2;
+    grid-area: index2;
 }
 .index-tercera{
-    grid-area: item3;
-    justify-self: flex-start;
-}
-.index-cuarta{
-    @extend .index-tercera;
-    grid-area: item4;
+    grid-area: index3;    
 }

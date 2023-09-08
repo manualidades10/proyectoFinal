@@ -99,68 +99,72 @@ footer .redes-footer {
 }
 
 .main-index {
-  padding-bottom: 1.25rem;
+  padding: 1.25rem;
 }
 .main-index h1 {
   text-align: center;
-  margin-top: 1.25rem;
   margin-bottom: 1.875rem;
 }
 
 .seccion-destacados {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+  grid-auto-rows: auto;
+  grid-template-areas: "index1 index2 index3";
+  justify-content: center;
+  align-content: center;
+  gap: none;
+  column-gap: none;
+  justify-items: center;
+}
+.seccion-destacados .card-index {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: none;
   grid-auto-rows: auto;
-  grid-template-areas: "item1 item3" "item2 item4";
+  grid-template-areas: "img contenido";
   justify-content: center;
   align-content: center;
-  gap: 1.5625rem;
-  column-gap: 6.25rem;
+  gap: none;
+  column-gap: 0.625rem;
   align-items: center;
-}
-.seccion-destacados .card-index {
-  width: 15.625rem;
-  height: 34.375rem;
+  background-color: rgb(164, 188, 146);
+  width: 33.125rem;
+  height: 22.5rem;
   border: 0.125rem solid black;
   border-radius: 1.25rem;
   overflow: hidden;
-  text-align: center;
 }
-.seccion-destacados .card-index div img {
+.seccion-destacados .card-index .card-img-index {
+  grid-area: img;
+}
+.seccion-destacados .card-index .card-img-index img {
   width: 100%;
-  object-fit: cover;
 }
-.seccion-destacados .card-index button {
-  font-size: 1.25rem;
-  background-color: rgb(164, 188, 146);
-  width: 70%;
-  padding: 1.25rem;
-  margin-top: 1.875rem;
-  border: 0.0625rem solid black;
-  border-radius: 1.875rem;
+.seccion-destacados .card-index .card-text-index {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3125rem;
 }
-.seccion-destacados .card-index button:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.seccion-destacados .card-index .card-text-index button {
+  width: 12.5rem;
+  height: 3.125rem;
 }
 
-.index-primera, .index-segunda {
-  grid-area: item1;
-  justify-self: flex-end;
+.index-primera {
+  grid-area: index1;
 }
 
 .index-segunda {
-  grid-area: item2;
+  grid-area: index2;
 }
 
-.index-tercera, .index-cuarta {
-  grid-area: item3;
-  justify-self: flex-start;
-}
-
-.index-cuarta {
-  grid-area: item4;
+.index-tercera {
+  grid-area: index3;
 }
 
 .texto-form {
