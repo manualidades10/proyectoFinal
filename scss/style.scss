@@ -17,7 +17,26 @@
 @import "./layout/main-index";
 @import "./layout/main-contacto";
 @import "./layout/main-tienda";
+@import "./layout/main-yo";
+@import "./layout/main-matetips";
 
 /** llamdo componentes **/
 
 @import "./components/navbar";
+@import "./components/botones";
+
+/** llamado media-queries **/
+
+
+
+
+@import "./layout/media/footer-media425";
+@import "./layout/media/header-media1024";
+@import "./layout/media/header-media768";
+@import "./layout/media/header-media425";
+
+@import "./layout/media/index/index-media1440";
+@import "./layout/media/index/index-media1024";
+@import "./layout/media/index/index-media768";
+
+@import "./layout/media/index/index-media425";

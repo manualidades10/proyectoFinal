@@ -1,0 +1,23 @@
+@media(max-width:425px){
+    .main-index{
+        padding: none;
+    }
+    .seccion-destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-index{
+            display: flex;
+            flex-direction: column;
+            gap: .625rem;
+            width: 60%;
+            height: 100%;
+            .card-img-index{
+                img{
+                    object-fit: cover;
+                }
+                
+            }
+        }
+    }
+}

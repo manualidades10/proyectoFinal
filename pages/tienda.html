@@ -9,87 +9,176 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>TIENDA</title>
 </head>
+
 <body>
-    
-  <header>
-    
-  </header>
+  <!-- HEADER -->
+    <header>
+        
+        <!-- PROMOCION-REDES-HEADER -->
+        <section class="seccion-redes-header">
+            <h3>HASTA TRES CUOTAS SIN INTERES!</h3>
+            <div>
+                <a target="_blank" href="https://www.instagram.com/manulopez_rey/"><img src="../assets/img/vector-instagram.png" alt="" ></a>
+                <a href=""><img src="../assets/img/vector-telefono.png" alt=""></a>
+                <a target="_blank" href="https://github.com/manualidades10"><img src="../assets/img/vector-github.png" alt=""></a>
+                <a href=""><img src="../assets/img/vector-discord.png" alt=""></a>
+            </div>
+        </section>
+        
+        <!-- TITULO-LOGO-BUSCADOR -->
+        <section class="seccion-titulo-header">
+            <div class="buscador">
+                <input type="text" placeholder="QUE ESTA BUSCANDO?" >
+                <button><img src="../assets/img/search.png" alt=""></button>
+            </div>
+            <div class="logo-header rotate-in-ver">
+               <img src="../assets/img/mate-header.png" alt="">
+            </div>
+            <h2>SIR <br>MATE!!</h2>
+        </section>
+        
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-md-flex justify-content-md-center aling-items-md-center" id="navbar-toggler">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../pages/tienda.html">TIENDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/mateTips.html">MATE-TIPS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/yo.html">SOBRE MI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+  
   <!-- MAIN-TIENDA -->
-  <main>
+  <main class="main-tienda">
       <section class="titulos-tienda">
           <h1>BIENVENIDOS A NUESTRA TIENDA</h1>
           <h2>ELEGI TU PROXIMO SIR <br>MATE</h2>
       </section>
         
       <section class="tienda container text-center">
-        <div class="row justify-content-center">
-              <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="row row-gap-3 justify-content-center">
+              <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                  <div class="card" style="width: 18rem;">
+                      <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">MATE IMPERIAL</h5>
+                        <p class="card-text"> El mate imperial suele ser más grande y cóncavo, lo que permite una mayor capacidad para la yerba mate y el agua. Esto facilita compartirlo con un grupo de personas, ya que puede servir más porciones sin necesidad de recargar constantemente.</p>
+                        <button class="boton-tienda">LO QUIERO<a href=""></a></button>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
                   <div class="card" style="width: 18rem;">
                       <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <button class="boton-tienda">LO QUIERO<a href=""></a></button>
                       </div>
                     </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                  <div class="card" style="width: 18rem;">
-                      <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text">El mate imperial suele ser más grande y cóncavo, lo que permite una mayor capacidad para la yerba mate y el agua. Esto facilita compartirlo con un grupo de personas, ya que puede servir más porciones sin necesidad de recargar constantemente.</p>
+                      <button class="boton-tienda">LO QUIERO<a href=""></a></button>
                     </div>
                   </div>
             </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="boton-tienda">LO QUIERO<a href=""></a></button>
+                  </div>
+                </div>
+          </div>
         </div>
         
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+        <!-- ------------ -->
+        
+        <div class="row row-gap-3 justify-content-center mt-5">
+          <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="boton-tienda">LO QUIERO<a href=""></a></button>
+                  </div>
+                </div>
           </div>
-
+          <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">El mate imperial suele ser más grande y cóncavo, lo que permite una mayor capacidad para la yerba mate y el agua. Esto facilita compartirlo con un grupo de personas, ya que puede servir más porciones sin necesidad de recargar constantemente.</p>
+                    <button class="boton-tienda">LO QUIERO<a href=""></a></button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button class="boton-tienda">LO QUIERO<a href=""></a></button>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/mate-card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">El mate imperial suele ser más grande y cóncavo, lo que permite una mayor capacidad para la yerba mate y el agua. Esto facilita compartirlo con un grupo de personas, ya que puede servir más porciones sin necesidad de recargar constantemente.</p>
+                  <button class="boton-tienda">LO QUIERO<a href=""></a></button>
+                </div>
+              </div>
         </div>
-      
-      
-      </section>
-
-
-
-
-
-
-
-
+        </div>
+    </section>
     </main>
-    <footer></footer>
     
+    <!-- FOOTER-TIENDA -->
+    <footer>
+      <div class="logo-wpp">
+          <a href=""><img src="../assets/img/vector-wpp.png" alt=""></a>
+      </div>
+      <div class="redes-footer">
+          <a target="_blank" href="https://www.instagram.com/manulopez_rey/"><img src="../assets/img/vector-instagram.png" alt="" ></a>
+          <a href=""><img src="../assets/img/vector-telefono.png" alt=""></a>
+          <a target="_blank" href="https://github.com/manualidades10"><img src="../assets/img/vector-github.png" alt=""></a>
+          <a href=""><img src="../assets/img/vector-discord.png" alt=""></a>
+      </div>
+  </footer>
     
-    
-    
-    
-    
-    
-    
+    <!-- SCRIPTS- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 </html>
