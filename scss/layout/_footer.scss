@@ -8,8 +8,10 @@ footer{
         left: 1.25rem;
         a{
             img{
+                transform: scale(1) rotate(0deg);
+                transition: transform 0.3s;
                 &:hover{
-                    width: 5rem;
+                    transform: scale(1.1) rotate(360deg);
                 }
             }
         }

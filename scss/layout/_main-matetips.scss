@@ -1,5 +1,27 @@
 .titulos-tips{
     text-align: center;
+    margin: .625rem auto;
+}
+
+.promocion-tips{
+    width: 80;
+    padding: 1.25rem;
+    border: .125rem solid black;
+    background-color:$color-claro-3;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        button{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        
+    }
 }
 
 .pasos-tips{

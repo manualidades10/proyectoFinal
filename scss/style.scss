@@ -24,6 +24,7 @@
 
 @import "./components/navbar";
 @import "./components/botones";
+@import "./components/carrusel";
 
 /** llamado media-queries **/
 
@@ -40,3 +41,13 @@
 @import "./layout/media/index/index-media768";
 
 @import "./layout/media/index/index-media425";
+@import "./layout/media/mate-tips/media768";
+@import "./layout/media/mate-tips/media425";
+@import "./layout/media/mate-tips/media375";
+@import "./layout/media/mate-tips/media320px";
+
+@import "./layout/media/yo/media1024";
+@import "./layout/media/yo/media768";
+@import "./layout/media/yo/media425";
+@import "./layout/media/yo/media375";
+
