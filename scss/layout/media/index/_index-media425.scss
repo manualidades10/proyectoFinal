@@ -1,6 +1,14 @@
 @media(max-width:425px){
     .main-index{
         padding: none;
+        div{
+            .carrusel{
+                height: 15.625rem;
+            }
+            .boton-carrusel{
+                height: 14.375rem;
+            }
+        }
     }
     .seccion-destacados{
         display: flex;

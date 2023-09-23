@@ -349,6 +349,7 @@ footer .redes-footer {
 
 .card {
   background-color: rgb(164, 188, 146);
+  width: 18rem;
 }
 
 .seccion-sobremi {
@@ -718,6 +719,12 @@ footer .redes-footer {
   }
 }
 @media (max-width: 768px) {
+  div .carrusel {
+    height: 25rem;
+  }
+  div .boton-carrusel {
+    height: 21.875rem;
+  }
   .seccion-destacados .card-index {
     height: 16.875rem;
   }
@@ -739,6 +746,12 @@ footer .redes-footer {
   .main-index {
     padding: none;
   }
+  .main-index div .carrusel {
+    height: 15.625rem;
+  }
+  .main-index div .boton-carrusel {
+    height: 14.375rem;
+  }
   .seccion-destacados {
     display: flex;
     flex-direction: column;
@@ -753,6 +766,14 @@ footer .redes-footer {
   }
   .seccion-destacados .card-index .card-img-index img {
     object-fit: cover;
+  }
+}
+@media (max-width: 320px) {
+  .main-index div .carrusel {
+    height: 9.375rem;
+  }
+  .main-index div .boton-carrusel {
+    height: 9.375rem;
   }
 }
 @media (max-width: 768px) {
